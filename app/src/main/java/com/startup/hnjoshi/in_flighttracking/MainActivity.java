@@ -1,5 +1,6 @@
 package com.startup.hnjoshi.in_flighttracking;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import static android.R.attr.value;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,6 +85,10 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
+        } else if (id == R.id.nav_map) {
+            Intent myIntent = new Intent(MainActivity.this, MapsActivity.class);
+            myIntent.putExtra("key", value); //Optional parameters
+            MainActivity.this.startActivity(myIntent);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
