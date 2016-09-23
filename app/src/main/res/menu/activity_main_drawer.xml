@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Map" />
+            android:title="Track" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
