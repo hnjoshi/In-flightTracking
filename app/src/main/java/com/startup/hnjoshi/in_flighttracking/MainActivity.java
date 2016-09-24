@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent myIntent = new Intent(MainActivity.this, Settings.class);
+            // myIntent.putExtra("key", value); //Optional parameters
+            MainActivity.this.startActivity(myIntent);
             return true;
         }
 
@@ -87,13 +90,16 @@ public class MainActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_map) {
             Intent myIntent = new Intent(MainActivity.this, MapsActivity.class);
-            myIntent.putExtra("key", value); //Optional parameters
+            // myIntent.putExtra("key", value); //Optional parameters
             MainActivity.this.startActivity(myIntent);
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_settings) {
+            Intent myIntent = new Intent(MainActivity.this, Settings.class);
+            // myIntent.putExtra("key", value); //Optional parameters
+            MainActivity.this.startActivity(myIntent);
 
         } else if (id == R.id.nav_share) {
 

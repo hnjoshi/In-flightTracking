@@ -11,6 +11,10 @@
     <dimen name="normal_key">15sp</dimen>
     <dimen name="normal_value">20sp</dimen>
 
+    <dimen name="settings_label">20sp</dimen>
+    <dimen name="settings_desc">15sp</dimen>
+    <dimen name="settings_item">18sp</dimen>
+
     <!-- Large screen size fonts e.g.: 7 inches tablet -->
     <dimen name="large_key">20sp</dimen>
     <dimen name="large_value">25sp</dimen>
